@@ -1,0 +1,10 @@
+def media (a,b,c):
+  return (a+b+c)/3
+  
+a = float(input('Digite um primeiro número para cálculo da média: '))
+b = float(input('Digite um segundo número: '))
+c = float(input('Digite um terceiro número: '))
+
+resultado = (a+b+c)/3
+print(f"A média dos números inseridos é: {resultado}")
+media (a,b,c)
