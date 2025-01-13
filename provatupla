@@ -1,0 +1,3 @@
+minhalista = ['morango', 'uva', 'maçã', 'melancia', 'laranja', 'maracujá']
+minhatupla = tuple(minhalista)
+print (f'as frutas da minha tupla são: {minhatupla}')
