@@ -1,0 +1,12 @@
+nompre = {}
+
+nompre ['nome1'] = input("Digite o nome do 1º alimento: ") and float(input(f'Digite o seu preço: ')) 
+nompre ['nome2'] = input("Digite o nome do 2º alimento: ")and float(input('Digite o seu preço: ')) 
+nompre ['nome3'] = input("Digite o nome do 3º alimento: ") and float(input('Digite o seu preço: ')) 
+nompre ['nome4'] = input("Digite o nome do 4º alimento: ") and float(input('Digite o seu preço: ')) 
+nompre ['nome5'] = input("Digite o nome do 5º alimento: ") and float(input('Digite o seu preço: ')) 
+
+
+valortotal = sum(nompre.values())
+
+print(f'o valor total dos itens acima é: R$ {valortotal}')
