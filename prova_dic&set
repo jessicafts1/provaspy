@@ -1,0 +1,7 @@
+dic_contato = {}
+
+dic_contato ['nome'] = input('Digite seu nome: ')
+dic_contato ['telefone'] = input('Digite seu telefone')
+dic_contato ['email'] = input ('Digite seu email: ')
+
+print (dic_contato)
