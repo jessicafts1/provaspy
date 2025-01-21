@@ -8,11 +8,10 @@
 import random
 
 def lancar_dados():
-    # Lançando dois dados sem usar randint, utilizando random() e arredondando para inteiros entre 1 e 6
+    
     dado_1 = int(random.random() * 6) + 1
     dado_2 = int(random.random() * 6) + 1
     
-    # Somando os resultados dos dois dados
     resultado = dado_1 + dado_2
     
     return resultado
