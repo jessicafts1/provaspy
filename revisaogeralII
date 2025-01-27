@@ -1,0 +1,7 @@
+import os
+path = "/"
+dir_lista = os.listdir(path)
+print("resultados em '", path, "' :")
+for item in dir_lista:
+
+    print(item)
