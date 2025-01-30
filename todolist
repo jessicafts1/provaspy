@@ -1,6 +1,7 @@
 import flet as ft
 
 def main(page: ft.Page):
+    page.title = "MINHA LISTINHA DE TAREFAS"
     def add_tarefa (e):
         if nova_tar.value:
             tarefa_view.controls.append(ft.Checkbox(label=nova_tar.value))
