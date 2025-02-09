@@ -1,0 +1,41 @@
+import flet as ft
+
+def main(page: ft.Page):
+    page.title = "Formulário de Contato"
+    
+
+    # Campos do formulário
+    nome = ft.TextField(label="Nome", cursor_color="blue", border_color="blue",  color= "red", width=400)
+    email = ft.TextField(label="Email", cursor_color="blue", border_color="blue", color= "red", width=400)
+    mensagem = ft.TextField(label="Mensagem", cursor_color="blue", border_color="blue", color="red", width=400)
+
+    # Função para processar o envio do formulário
+    def enviar_form(e):
+        if not nome.value or not email.value or not mensagem.value:
+            page.snack_bar = ft.SnackBar(
+                content=ft.Text("  ", color=ft.colors.WHITE),
+                bgcolor=ft.colors.WHITE,
+            )
+            page.snack_bar.open = True
+            page.update()
+            return
+        page.clean()
+        page.add(ft.Text("Formulário enviado com sucesso!", size=30, color=ft.colors.BLUE_500))
+
+        
+    # Botão de envio
+    enviar = ft.ElevatedButton("Enviar", on_click=enviar_form, color="blue", width= 200)
+
+    # Layout do formulário
+    form = ft.Column(
+        [
+            nome,
+            email,
+            mensagem,
+            enviar
+        ])
+
+    page.add(form)
+
+# Iniciar a aplicação
+ft.app(target=main)
